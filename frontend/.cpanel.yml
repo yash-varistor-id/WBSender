@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/ytbhai/public_html/wbsender
+    - /bin/cp * $DEPLOYPATH
