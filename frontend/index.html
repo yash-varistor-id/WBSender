@@ -1,11 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>WBSender</title>
 </head>
+
 <body>
-    
+  <div class="background">
+    <!-- navigation bar -->
+    <div class="menu_wrapper">
+
+      <div class="menu_bar">
+        <a href="index.html" title="Logo" class="logo_wb">
+          <img class="logo" src="Logo.png" title="Logo" alt="Logo" />
+          WBSender
+        </a>
+        <img class="menu-icon" src="menu.svg" title=" burger menu" alt="burger menu" onclick="toggleMenu(this)" />
+        <menu class="navigation">
+          <a href="#grow" class='button'>
+            <svg>
+              <rect x="0" y="0" fill="none" width="100%" height="100%" />
+            </svg>
+            Home
+          </a>
+          <a href="#featureHeading" class='button'>
+            <svg>
+              <rect x="0" y="0" fill="none" width="100%" height="100%" />
+            </svg>Features</a>
+          <a href="#pricing" class='button'>
+            <svg>
+              <rect x="0" y="0" fill="none" width="100%" height="100%" />
+            </svg>Pricing</a>
+          <a href="#place3" class='button'><svg>
+              <rect x="0" y="0" fill="none" width="100%" height="100%" />
+            </svg>About</a>
+          <a href="#place4" class='button'><svg>
+              <rect x="0" y="0" fill="none" width="100%" height="100%" />
+            </svg>Contact Us</a>
+            <button class="button-52" role="button">Login/Register</button>
+        </menu>
+      </div>
+
+    </div>
+    <!-- progress bar -->
+    <div class="progress__wrapper">
+      <span class="progress__bar"></span>
+    </div>
+
+    <div id="homePage">
+      <div class="top_matter">
+        <h1 id="grow">
+          Grow your Business on WhatsApp
+        </h1>
+        <p>Personalize communication and sell more with the
+          WhatsApp Business API platform that automates
+          marketing, sales, service and support </p><br>
+        <button class="button-52" role="button">Login/Register</button>
+      </div>
+      <div class="sideImg">
+        <img src="top-photo.png" alt="Image">
+      </div>
+    </div>
+    <!-- Features  -->
+    <div id="featureContainer">
+      <h1 class="h1-primary">
+        Features
+      </h1>
+      <p class="centeredPara">Use WBSender to engage your prospects through the WhatsApp Business API</p>
+
+      <div class="featureBoxes">
+
+        <div class="featureBox">
+          <div class="featureImg">
+            <img src="try-photo.png.jpg" alt="Preview" title="Preview" />
+          </div>
+          <div class="feature">
+            <h2 class="h2-primary">Broadcast Communication</h2>
+            <p>
+              Push out your campaigns and engage with high response WhatsApp messages.
+            </p>
+          </div>
+        </div>
+        <div class="featureBox">
+          <div class="featureImg">
+            <img src="try-photo.png.jpg" alt="Preview" title="Preview" />
+          </div>
+          <div class="feature">
+            <h2 class="h2-primary">Low-Code Automations</h2>
+            <p>
+              Simplify mass communication and personalized responses with automated tools.
+            </p>
+          </div>
+        </div>
+        <div class="featureBox">
+          <div class="featureImg">
+            <img src="try-photo.png.jpg" alt="Preview" title="Preview" />
+          </div>
+          <div class="feature">
+            <h2 class="h2-primary" id="marginOnTop">1-2-1 Communication</h2>
+            <p>
+              Tag contacts, categorize and target them in groups using personalized communications.
+            </p>
+          </div>
+        </div>
+        <div class="featureBox">
+          <div class="featureImg">
+            <img src="try-photo.png.jpg" alt="Preview" title="Preview" />
+          </div>
+          <div class="feature">
+            <h2 class="h2-primary"><pre>Multiple channels
+in one</pre></h2>
+            <p>
+              Nurture leads from Facebook and Instagram and increase ROI 10x by funneling your leads to WhatsApp.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- <div class="article__content">
+           
+            <h2 id="place1">
+                Place 1
+            </h2>
+            <img src="top-pho.png" alt="Lavender Field" title="Autumn"/>
+            <p>Nullam at arcu a est sollicitudin euismod. Nam quis nulla. In enim a arcu imperdiet malesuada. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus.</p>
+            <h2 id="place2">
+                Place 2
+            </h2>
+            <img src="images/autumn.jpg" alt="Autumn" title="Autumn"/>
+            <p>Fusce suscipit libero eget elit. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Phasellus rhoncus. Integer vulputate sem a nibh rutrum consequat. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Phasellus et lorem id felis nonummy placerat. Pellentesque sapien. Praesent in mauris eu tortor porttitor accumsan. Mauris tincidunt sem sed arcu. Aliquam ante. Nulla quis diam. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Phasellus et lorem id felis nonummy placerat. </p>
+            <h2 id="place3">
+                Place 3
+            </h2>
+            <img src="images/summer.jpg" alt="Summer" title="Summer"/>
+            <p>Aenean vel massa quis mauris vehicula lacinia. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Curabitur vitae diam non enim vestibulum interdum. Pellentesque pretium lectus id turpis. Mauris tincidunt sem sed arcu. In rutrum. Nulla quis diam. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Nullam sapien sem, ornare ac, nonummy non, lobortis a enim. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Nam sed tellus id magna elementum tincidunt. </p>
+            <h2 id="place4">
+                Place 4
+            </h2>
+            <img src="images/forest.jpg" alt="Forest" title="Autumn"/>
+            <p></p>            
+        </div> -->
+
+    <section class="landing-page-section" id="pricing">
+      <h2>Become <span class="gradient-text">WBSender Member</span></h2><br>
+      <!-- <p>
+            The price for each plan represents a two-time payment. <!--? more text here --
+          </p> -->
+      <div class="pricing-container">
+        <article class="pricing-card pricing-card--primary">
+          <img src="complete-package.svg" alt="Complete Package" class="plan-icon">
+          <h3>Standard</h3>
+          <div class="pricing-card__price">
+            <img alt="Price" src="price.svg">
+            ₹2500.00
+            <s>₹4000</s>
+          </div>
+          <a class="enroll" title="Enroll Now" target="_blank" rel="noopener"
+            href="https://learning.atheros.ai/course-detail/ux-design-process">
+            Get Started
+          </a>
+          <div class="divider"></div>
+          <ul>
+            <li>
+              The Complete Package includes all the benefits mentioned in the next two packages 👇🏼
+            </li>
+            <!--? More benefits here -->
+          </ul>
+        </article>
+        <article class="pricing-card pricing-card--primary">
+          <img src="complete-package.svg" alt="Complete Package" class="plan-icon">
+          <h3>Pro</h3>
+          <div class="pricing-card__price">
+            <img alt="Price" src="price.svg">
+            ₹5000.00
+            <s>₹7400</s>
+          </div>
+          <a class="enroll" title="Enroll Now" target="_blank" rel="noopener"
+            href="https://learning.atheros.ai/course-detail/ux-design-process">
+            Get Started
+          </a>
+          <div class="divider"></div>
+          <ul>
+            <li>
+              Better than Standard package 👇🏼
+            </li>
+            <li>
+              The Complete Package includes all the benefits mentioned in the next two packages 👇🏼
+            </li>
+            <!--? More benefits here -->
+          </ul>
+        </article>
+        <article class="pricing-card pricing-card--primary">
+          <img src="complete-package.svg" alt="Complete Package" class="plan-icon">
+          <h3>Enterprise</h3>
+          <div class="pricing-card__price">
+            <img alt="Price" src="price.svg">
+            ₹7400.00
+            <s>₹9000</s>
+          </div>
+          <a class="enroll" title="Enroll Now" target="_blank" rel="noopener"
+            href="https://learning.atheros.ai/course-detail/ux-design-process">
+            Get Started
+          </a>
+          <div class="divider"></div>
+          <ul>
+            <li>
+              Better than Standard package 👎
+            </li>
+            <li>
+              Better than pro package 🤜🏻
+            </li>
+            <li>
+              The Complete Package includes all the benefits mentioned in the next two packages 👇🏼
+            </li>
+            <!--? More benefits here -->
+          </ul>
+        </article>
+        <!--? More cards here -->
+      </div>
+    </section>
+    <!-- FAQs Starts Here -->
+    <div class="faqContainer">
+      <h1 class="h1-primary">
+        FYQs
+      </h1>
+      <div class="faq-container">
+        <details>
+          <summary>
+            <span class="faq-title">
+              Why use WBSender?
+            </span>
+            <img src="plus.svg" class="expand-icon" />
+          </summary>        
+          <div class="faq-content">
+            Use WBSender to increase your repeat sales by upto 56% and convert 34% more non-paying prospective customers. Also with WBSender you can send messages across email, sms and whatsapp, no need to integrate separately with multiple tools for the same. Optimise your campaign cost by sending emails and sms first(cheaper channels ) and then send whatsapp saving upto 70% on whatsapp marketing costs.
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span class="faq-title">
+              How does WBSender work?
+            </span>
+            <img src="plus.svg" class="expand-icon" />
+          </summary>        
+          <div class="faq-content">
+            Once you have uploaded you customer contact on your WBSender dashboard you can start sending them email, SMS and WhatsApp through our pre-built industry tested templates that are designed to drive maximum conversion.
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span class="faq-title">Is my customer data safe?</span>
+            <img src="plus.svg" class="expand-icon" />
+          </summary>        
+          <div class="faq-content">Yes, your customer data can only be seen by you and not even Cheerio can access your data. It's stored in an encrypted fashion within our DB and the key is only available via your dashboard.</div>
+        </details>
+        <details>
+          <summary>
+            <span class="faq-title">Do I need to register with WhatsApp business to use WhatsApp messaging?</span>
+            <img src="plus.svg" class="expand-icon" />
+          </summary>        
+          <div class="faq-content">It’s recommended that you register with WhatsApp for business but even if you haven’t you can still use WBSender's WhatsApp to send out messages for the first 10 days.</div>
+        </details>
+        <details>
+          <summary>
+            <span class="faq-title">Do I need to register with DLT to use SMS?</span>
+            <img src="plus.svg" class="expand-icon" />
+          </summary>        
+          <div class="faq-content">It’s recommended that you complete DLT registration for your business but even if you haven’t you can still use WBSender's SMS handle to send out messages for the first 10 days.</div>
+        </details>
+        <details>
+          <summary>
+            <span class="faq-title">Can I get refunds once I have paid?</span>
+            <img src="plus.svg" class="expand-icon" />
+          </summary>        
+          <div class="faq-content">Yes, we provide refund minus GST paid and credits utilized to you upto 15 days from payment.</div>
+        </details>
+      </div>
+    </div>
+    <!-- FAQs End Here -->
+    <!-- Discover More Section -->
+    <section class="waf8 paddwat60">
+      <div class="container">
+        <div class="row adjustbxflex center">
+          <div class="col-md-12 col-sm-12 sec">
+            <h2 class="h2 int  default"><strong> Discover more.</strong> WhatsApp, Facebook and Instagram’s share of
+              social media messaging is unrivaled. Harness it with one of the fastest growing WhatsApp Business Solution
+              Providers.</h2><br>
+            <div class="btns  space default">
+              <a href="index.html" target="_blank"  rel="noopener" class="btnD brdr wht">Login</a>
+              <a href="index.html" class="btn_nrml brr wht">Register</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Discover More Section Ends -->
+  </div>
 </body>
+    <!-- Footer starts here -->
+    <footer>
+      <div class="footer-wrapper">
+        <section class="footer-top">
+          <a href="index.html" title="logo">
+            <img src="Logo.png" class="footer-logo" alt="WBSender" /></a>
+          <span class="social-links">
+            <a href="#" title="Instagram">
+              <img src="instagram-logo.svg" alt="Instagram" />
+            </a>
+            <a href="#" title="Instagram">
+              <img src="facebook-logo.svg" alt="Facebook" />
+            </a>
+            <a href="#" title="Instagram">
+              <img src="linkedin-logo.svg" alt="Linkedin" />
+            </a>
+            <a href="#" title="Instagram">
+              <img src="twitter-logo.svg" alt="twitter" />
+            </a>
+          </span>
+        </section>
+        <section class="footer-columns">
+          <section>
+            <ul>
+              <h3>Solutions</h3>
+              <li>
+                <a href="#" title="Solution 1">Solution 1</a>
+              </li>
+              <li>
+                <a href="#" title="Solution 1">Solution 1</a>
+              </li>
+              <li>
+                <a href="#" title="Solution 1">Solution 1</a>
+              </li>
+              <li>
+                <a href="#" title="Solution 1">Solution 1</a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <ul>
+              <h3>Product</h3>
+              <li>
+                <a href="#" title="Solution 1">Solution 1</a>
+              </li>
+              <li>
+                <a href="#" title="Solution 1">Solution 1</a>
+              </li>
+              <li>
+                <a href="#" title="Solution 1">Solution 1</a>
+              </li>
+              <li>
+                <a href="#" title="Solution 1">Solution 1</a>
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section class="fotter-bottom">
+          <small> Varistor Technologies Private Ltd. <span id="year"></span>, All rights reserved</small>
+          <span class="footer-bottom-links">
+            <a href="#" title="Terms and services">Terms and Services</a>
+            <a href="#" title="Privacy Policy">Privacy policy</a>
+          </span>
+        </section>
+      </div>
+    </footer>
+    <!-- footer ends here -->
+<script src="script.js"></script>
+
 </html>
