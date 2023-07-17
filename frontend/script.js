@@ -134,3 +134,7 @@ class Accordion {
 
 // footer
 document.getElementById("year").innerHTML = new Date().getFullYear();
+
+
+//contact us
+feather.replace();
