@@ -2,10 +2,10 @@
 const toggleMenu = () => {
     const burgerMenu = document.querySelector(".menu-icon");
     const src= burgerMenu.getAttribute('src');
-    const iconName = src === 'menu.svg'?
-    'close.svg'
+    const iconName = src === 'images/menu.svg'?
+    'images/close.svg'
     :
-    'menu.svg';
+    'images/menu.svg';
 
     burgerMenu.setAttribute('src',iconName );
     const navigation = document.querySelector('.navigation');
@@ -70,11 +70,11 @@ class Accordion {
       });
 
       this.animation.onfinish = () => {
-        this.expandIcon.setAttribute('src', 'plus.svg');
+        this.expandIcon.setAttribute('src', 'images/plus.svg');
         return this.onAnimationFinish(false);
       }
       this.animation.oncancel = () => {
-        this.expandIcon.setAttribute('src', 'plus.svg');
+        this.expandIcon.setAttribute('src', 'images/plus.svg');
         return this.isClosing = false;
       }
     }
@@ -106,14 +106,14 @@ class Accordion {
       this.animation.onfinish = () => {
         this.expandIcon.setAttribute(
             'src',
-            'minus.svg'
+            'images/minus.svg'
         );
         return this.onAnimationFinish(true);
       }
       this.animation.oncancel = () => {
         this.expandIcon.setAttribute(
             'src',
-            'minus.svg'
+            'images/minus.svg'
         );
         return this.isExpanding = false;
       }
