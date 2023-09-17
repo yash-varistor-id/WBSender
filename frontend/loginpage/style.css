@@ -20,7 +20,7 @@ scroll-behavior: smooth;
   box-sizing: border-box;
 }
 body{
-  font-family: raleway;;
+  font-family: 'raleway';
   background: #ffffff;
 }
 
@@ -52,7 +52,6 @@ a{
   background-color: white;
   height: 60px;
   opacity: 1;
-	border-bottom: solid black;
   padding-left: 10%;
 }
 .logo_wb{
@@ -164,10 +163,10 @@ background-color: var(--background);
   box-sizing: border-box;
 }
 .btn-30 {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-appearance: button;
-  background-color: #fff;
-  background-image: none;
+  /* -webkit-tap-highlight-color: transparent; */
+  
+  background-color: #25d366;
+  
   color: #fff;
   cursor: pointer;
   font-family: 'Raleway', sans-serif;
@@ -175,22 +174,18 @@ background-color: var(--background);
   font-size: 1.1rem;
   font-weight: 500;
   margin: 0;
-  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
   padding: 0;
 }
 .btn-30:disabled {
   cursor: default;
 }
-.btn-30:-moz-focusring {
+/* .btn-30:-moz-focusring {
   outline: auto;
-}
+} */
 .btn-30 svg {
   display: block;
-  vertical-align: middle;
 }
-.btn-30 [hidden] {
-  display: none;
-}
+/*  */
 .btn-30 {
   border-radius: 990px;
   border-width: 1px;
@@ -198,12 +193,13 @@ background-color: var(--background);
   padding: 0.6rem 1.3rem;
   position: relative;
 }
-.btn-30 span {
+/* .btn-30 span {
   mix-blend-mode: difference;
-}
+} */
 .btn-30:before {
   aspect-ratio: 1;
   background: #000;
+  color: #fff;
   border-radius: 50%;
   content: "";
   height: 0;
@@ -223,10 +219,17 @@ background-color: var(--background);
 }
 .btn-30 .text {
   display: block;
-  mix-blend-mode: difference;
+  font-weight: 600;
+  font-size: 20px;
+  /* mix-blend-mode: difference; */
   position: relative;
 }
-
+.btn-30 .text:hover:before{
+  display: block;
+  color: #fff;
+  /* mix-blend-mode: difference; */
+  position: relative;
+}
 @-webkit-keyframes move-up-alternate {
   0% {
     transform: translateY(0);
@@ -280,12 +283,38 @@ background-color: var(--background);
   justify-content: space-evenly;
   margin-top: 70px;
 }
+
 .image{
   max-width: 600px;
 }
 .image img{
-  width: 100%;
+  width: 70%;
 }
+
+.info{
+  margin: 2rem 0rem;
+}
+
+.info h1{
+  margin: 2rem 0rem;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li:before {
+  content: '✓';
+  font-size: 15px;
+  color: limegreen;
+  line-height: 1.7;
+  padding-right: 10px;
+}
+
+ul li{
+  margin: 1.5rem 0rem;
+}
+
 .container{
   position: relative;
   max-width: 380px;

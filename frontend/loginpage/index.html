@@ -13,7 +13,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>LoginSlashRegister</title>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth-compat.js"></script>
+       
+    <title>WBSender</title>
   </head>
 
   <body>
@@ -52,7 +56,16 @@
       <!-- info and log in starts -->
       <div class="LoginContainer">
         <div class="image">
-          <img src="../images/login photo.png" alt="" />
+          <div class="info">
+            <h1>Get started today!</h1>
+            <ul>
+              <li>Tailored Campaigns for delivering customized promotions.</li>
+              <li>Ready-made templates for sending updates and notifications.</li>
+              <li>24/7 real-time interactions facilitated by no-code chatbots.</li>
+              <li>Efficient automations to expedite issue resolution.</li>
+            </ul>
+          </div>
+          <img src="../images/login photo2.png" alt="" />
         </div>
         <div class="container">
           <div class="forms">
@@ -61,13 +74,13 @@
 
               <form action="#">
                 <div class="input-field">
-                  <input type="text" placeholder="Enter your email" required />
+                  <input type="text" id="emails" placeholder="Enter your email" required />
                   <i class="uil uil-envelope icon"></i>
                 </div>
                 <div class="input-field">
                   <input
                     type="password"
-                    class="password"
+                    class="password" id="pass"
                     placeholder="Enter your password"
                     required
                   />
@@ -84,9 +97,10 @@
                   <a href="#" class="text">Forgot password?</a>
                 </div>
 
-                <div class="input-field button">
-                  <input type="button" value="Login" class="noPadding" />
-                </div>
+                <!-- <div class="input-field button">
+                  <button onclick="login()" class="noPadding"> </button> -->
+                <!-- </div> -->
+                <button type="submit" onclick="signin()" class="input-field">Login</button>
               </form>
 
               <div class="login-signup">
@@ -97,9 +111,10 @@
               </div>
               <span class="centered">- or -</span>
               <div class="col">
-                <a href="#" class="google button"
+                <button type="submit" class="google"><i class="fa fa-google fa-fw"> </i> Continue with Google+</button>
+                <!-- <a href="#" class="google button"
                   ><i class="fa fa-google fa-fw"> </i> Continue with Google+
-                </a>
+                </a> -->
               </div>
             </div>
 
@@ -107,18 +122,18 @@
             <div class="form signup">
               <span class="title">Signup</span>
 
-              <form action="#">
+              <form action="#" id="form">
                 <div class="input-field">
-                  <input type="text" placeholder="Enter your name" required />
+                  <input type="text" placeholder="Enter your name" id="name" required />
                   <i class="uil uil-user"></i>
                 </div>
                 <div class="input-field">
-                  <input type="text" placeholder="Enter your email" required />
+                  <input type="email" id="email" placeholder="Enter your email" required />
                   <i class="uil uil-envelope icon"></i>
                 </div>
                 <div class="input-field">
                   <input
-                    type="password"
+                    type="password" id="password"
                     class="password"
                     placeholder="Create a password"
                     required
@@ -138,16 +153,13 @@
 
                 <div class="checkbox-text">
                   <div class="checkbox-content">
-                    <input type="checkbox" id="termCon" />
+                    <input type="checkbox" id="termCon" required/>
                     <label for="termCon" class="text"
                       >I accepted all terms and conditions</label
                     >
                   </div>
                 </div>
-
-                <div class="input-field button">
-                  <input type="button" value="Signup" />
-                </div>
+                  <button type="submit" onclick="signup()" class="input-field">Register</button>
               </form>
 
               <div class="login-signup">
@@ -158,9 +170,10 @@
               </div>
               <span class="centered">- or -</span>
               <div class="col">
-                <a href="#" class="google button"
+                <button type="submit" class="google"><i class="fa fa-google fa-fw"> </i> Continue with Google+</button>
+                <!-- <a href="#" class="google button"
                   ><i class="fa fa-google fa-fw"> </i> Continue with Google+
-                </a>
+                </a> -->
               </div>
             </div>
           </div>
@@ -169,6 +182,7 @@
 
       <!-- info and log in ends -->
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
