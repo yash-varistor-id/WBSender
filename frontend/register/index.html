@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,10 +13,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Document</title>
+    <title>WBSender</title>
 </head>
 <body>
-                <!-- Registration Form -->
+                <!-- Registration Form 
                 <div class="form signup">
                     <span class="title">Signup</span>
       
@@ -71,8 +71,142 @@
                       <button type="submit" class="google"><i class="fa fa-google fa-fw"> </i> Continue with Google+</button>
                       <!-- <a href="#" class="google button"
                         ><i class="fa fa-google fa-fw"> </i> Continue with Google+
-                      </a> -->
+                      </a> 
+                    </div>
+                  </div> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../images/Logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+       
+    <title>WBSender</title>
+  </head>
+
+  <body>
+    <div class="background">
+      <!-- navigation bar starts -->
+      <div class="menu_wrapper">
+        <div class="menu_bar">
+          <a target="_blank" title="Logo" class="logo_wb">
+            <img
+              class="logo"
+              src="../images/Logo.png"
+              title="Logo"
+              alt="Logo"
+            />
+            WBSender
+          </a>
+          <img
+            class="menu-icon"
+            src="../images/menu.svg"
+            title=" burger menu"
+            alt="burger menu"
+            onclick="toggleMenu(this)"
+          />
+          <menu class="navigation">
+            <a href="../index.html"
+              ><button class="btn-30" onclick>
+                <span class="text-container">
+                  <span class="text">Home</span>
+                </span>
+              </button></a
+            >
+          </menu>
+        </div>
+      </div>
+      <!-- navigation ends starts -->
+      <!-- info and log in starts -->
+      <div class="LoginContainer">
+        <div class="image">
+          <div class="info">
+            <h1>Get started today!</h1>
+            <ul>
+              <li>Tailored Campaigns for delivering customized promotions.</li>
+              <li>Ready-made templates for sending updates and notifications.</li>
+              <li>24/7 real-time interactions facilitated by no-code chatbots.</li>
+              <li>Efficient automations to expedite issue resolution.</li>
+            </ul>
+          </div>
+          <img src="../images/login photo2.png" alt="" />
+        </div>
+        <div class="container">
+          <div class="forms">
+            <div class="form signup">
+                <span class="title">Signup</span>
+  
+                <form action="#" id="form">
+                  <div class="input-field">
+                    <input type="text" placeholder="Enter your name" id="name" required />
+                    <i class="uil uil-user"></i>
+                  </div>
+                  <div class="input-field">
+                    <input type="email" id="email" placeholder="Enter your email" required />
+                    <i class="uil uil-envelope icon"></i>
+                  </div>
+                  <div class="input-field">
+                    <input
+                      type="password" id="password"
+                      class="password"
+                      placeholder="Create a password"
+                      required
+                    />
+                    <i class="uil uil-lock icon"></i>
+                  </div>
+                  <div class="input-field">
+                    <input
+                      type="password"
+                      class="password"
+                      placeholder="Confirm a password"
+                      required
+                    />
+                    <i class="uil uil-lock icon"></i>
+                    <i class="uil uil-eye-slash showHidePw"></i>
+                  </div>
+  
+                  <div class="checkbox-text">
+                    <div class="checkbox-content">
+                      <input type="checkbox" id="termCon" required/>
+                      <label for="termCon" class="text"
+                        >I accepted all terms and conditions</label
+                      >
                     </div>
                   </div>
-</body>
+                    <button type="submit" onclick="signup()" class="btn">Register</button>
+                </form>
+  
+                <div class="login-signup">
+                  <span class="text"
+                    >Already a member?
+                    <a href="#" class="text login-link">Login Now</a>
+                  </span>
+                </div>
+                <span class="centered">- or -</span>
+                <div class="col">
+                  <button type="submit" class="google"><i class="fa fa-google fa-fw"> </i> Continue with Google+</button>
+                  <!-- <a href="#" class="google button"
+                    ><i class="fa fa-google fa-fw"> </i> Continue with Google+
+                  </a> -->
+                </div>
+              </div>
+        </div>
+      </div>
+
+      <!-- info and log in ends -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
